@@ -13,3 +13,6 @@
 
 = Functions
 - return type must be put, except for procedures that return `Void` (the linter removes `-> Void`, which is painful)
+
+= Typing
+- `extension`, trop bien
