@@ -7,13 +7,18 @@
             "label": "Run current snippet",
             "type": "shell",
             "command": "swift run ${fileBasenameNoExtension}",
-            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            // "dependsOn": "Build current snippet",
+            "isBackground": false,
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
             "presentation": {
                 "echo": true,
+                "revealProblems": "onProblem",
                 "reveal": "always",
                 "focus": false,
                 "panel": "shared",
