@@ -16,3 +16,4 @@
 
 = Typing
 - `extension`, trop bien
+- Option types ? and ??, foo() -> Int? si pas là foo() ?? 3, peu verbeux, c'est bien

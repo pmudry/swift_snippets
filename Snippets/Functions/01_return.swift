@@ -20,3 +20,30 @@ func rec(n: Int) -> Int {
 }
 
 print(foo())
+
+// Multiple return values via tuples
+func minMax(_ array: [Int]) -> (min: Int, max: Int) {
+    if array.isEmpty { return (0, 0) }
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array[1..<array.count] {
+        if value < currentMin { currentMin = value }
+        else if value > currentMax { currentMax = value }
+    }
+    return (currentMin, currentMax)
+}   
+
+// Multiple return values via tuples and optional
+func minMax2(_ array: [Int]) -> (min: Int, max: Int)? {
+    if array.isEmpty { return nil }
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array[1..<array.count] {
+        if value < currentMin { currentMin = value }
+        else if value > currentMax { currentMax = value }
+    }
+    return (currentMin, currentMax)
+}   
+
+print(minMax([8, -6, 2, 109, 3, 71]))
+print(minMax2([]) ?? (0, 0)) // Nicer !
