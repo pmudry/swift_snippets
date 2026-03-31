@@ -6,5 +6,29 @@
 	],
 	"settings": {
 		"swift.backgroundCompilation": false
+	},
+	"launch": {
+		"configurations": [
+			{
+				"type": "swift",
+				"request": "launch",
+				"args": [],
+				"cwd": "${workspaceFolder:swift_snippets}",
+				"name": "Debug Snippets (swift_snippets)",
+				"target": "Snippets",
+				"configuration": "debug",
+				"preLaunchTask": "swift: Build Debug Snippets (swift_snippets)"
+			},
+			{
+				"type": "swift",
+				"request": "launch",
+				"args": [],
+				"cwd": "${workspaceFolder:swift_snippets}",
+				"name": "Release Snippets (swift_snippets)",
+				"target": "Snippets",
+				"configuration": "release",
+				"preLaunchTask": "swift: Build Release Snippets (swift_snippets)"
+			}
+		]
 	}
 }
