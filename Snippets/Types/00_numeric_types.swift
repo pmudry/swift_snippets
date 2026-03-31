@@ -23,4 +23,3 @@ print("Value of g is \(String(g, radix: 16, uppercase: true))") // prints "f"
 // let h : UInt8 = (f | g) + 1
 // print("Value of h is \(String(h, radix: 16, uppercase: true))") 
 
-let h: Long = 322
